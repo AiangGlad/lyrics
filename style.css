@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    font-family: 'Solway', serif;
+    width:100%;
+}
+
+
+#vid{
+    position:absolute;
+    z-index: -1;
+    filter:brightness(0.2);
+    width:100%;
+}
+
+.intro{
+    margin:40px auto;
+    text-align: center;
+    width:80%;
+}
+
+.intro > p{
+    font-family: 'Catamaran', sans-serif;
+    color:white;
+    font-size: 17px;
+}
+
+#liten{
+    font-size: 13px;
+}
+
+h1{
+    font-family: 'Catamaran', sans-serif;
+    color:white;
+    text-align: center;
+    margin-top:25px;
+    font-size: 60px;
+}
+
+h2{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.overskrift1, .overskrift2, .overskrift3{
+    text-align: center;
+    cursor: pointer;
+}
+
+main{
+    margin-top:10px;
+
+    width:100%;
+    background-color:rgb(44, 43, 43) ;
+}
+
+main > .lyricbox1{
+    margin:20px auto;
+    width:270px;
+    background-color: rgb(188, 183, 183);
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 10px 10px 0 rgb(33, 32, 32);
+}
+
+main > .lyricbox2{
+    margin:20px auto;
+    width:270px;
+    background-color: rgb(164, 161, 161);
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 10px 10px 0 rgb(33, 32, 32);
+}
+
+main > .lyricbox3{
+    margin:20px auto;
+    width:270px;
+    background-color: rgb(142, 142, 142);
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 10px 10px 0 rgb(33, 32, 32);
+}
+
+audio{
+    width:100%;
+    margin-top:10px;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: rgb(114, 112, 112);
+}
+
+audio::-webkit-media-controls-play-button{
+    border-radius:50%;
+    background-color: rgb(173, 172, 172);
+
+}
+
+main > .lyricbox1> .lyric1 > .vers{
+    margin: 30px 10px;
+}
+
+main > .lyricbox1 > .lyric1 > .vers > p{
+    margin: 5px 10px;
+}
+
+main > .lyricbox1 > .lyric1 > img{
+    width:100%;
+    border-radius: 10px;
+}
+
+
+main > .lyricbox2> .lyric2 > .vers{
+    margin: 30px 10px;
+}
+
+main > .lyricbox2 > .lyric2 > .vers > p{
+    margin: 5px 10px;
+}
+
+main > .lyricbox2 > .lyric2 > img{
+    width:100%;
+    border-radius: 10px;
+}
+
+/* dd */
+main > .lyricbox3> .lyric3 > .vers{
+    margin: 30px 10px;
+}
+
+main > .lyricbox3 > .lyric3 > .vers > p{
+    margin: 5px 10px;
+}
+
+main > .lyricbox3 > .lyric3 > img{
+    width:100%;
+    border-radius: 10px;
+}
+
+
+.lyric1 , .lyric2, .lyric3{
+    display:none;
+}
+
+.lyric1.show{
+    display:inline-block;
+}
+
+.lyric2.show{
+    display:inline-block;
+}
+
+.lyric3.show{
+    display:inline-block;
+}
+
+#slutt{
+    width:270px;
+    border-radius: 10px;
+    margin-bottom:20px;
+}
+
+@media(min-width:289px){
+
+    h2{
+        font-size:20px;
+    }
+    
+    main > .lyricbox1{
+        width:290px;
+    }
+    
+    main > .lyricbox2{
+        width:290px;
+    }
+    
+    main > .lyricbox3{
+        width:290px;
+    }
+    
+    #slutt{
+        width:290px;
+    }
+
+    .bilde{
+        width:100%;
+        background-color:rgb(44, 43, 43) ;
+        text-align: center;
+    }
+
+    h1{
+        font-family: 'Catamaran', sans-serif;
+        color:white;
+        text-align: center;
+        margin-top:25px;
+        font-size: 40px;
+    }
+}
+
+@media(min-width:374px){
+
+    
+h2{
+    font-size:30px;
+}
+
+#slutt{
+    width:340px;
+}
+
+main > .lyricbox1{
+    width:340px;
+}
+
+main > .lyricbox2{
+    width:340px;
+
+}
+
+main > .lyricbox3{
+    width:340px;
+}
+
+.intro{
+    margin:40px auto;
+    text-align: center;
+    width:80%;
+}
+
+.intro > p{
+    font-family: 'Catamaran', sans-serif;
+    color:white;
+    font-size: 20px;
+}
+
+#liten{
+    font-size: 17px;
+    margin-bottom:60px;
+}
+
+h1{
+    font-family: 'Catamaran', sans-serif;
+    color:white;
+    text-align: center;
+    margin-top:25px;
+    font-size: 60px;
+}
+
+}
+
+
+
+@media(min-width:413px){
+    main{
+        margin-top:40px;
+    }
+
+    .intro{
+        margin-top:80px;
+    }
+
+    #slutt{
+        width:370px;
+    }
+    
+    main > .lyricbox1{
+        width:370px;
+    }
+    
+    main > .lyricbox2{
+        width:370px;
+    
+    }
+
+    h2{
+        font-size:30px;
+    }
+    
+    main > .lyricbox3{
+        width:370px;
+    }
+}
+/*----------Nye greier-------- */
+
+
+
+
+@media(min-width:767px){
+    
+    #slutt{
+        width:570px;
+    }
+    
+    main > .lyricbox1{
+        width:570px;
+    }
+    
+    main > .lyricbox2{
+        width:570px;
+    
+    }
+
+    main > .lyricbox3{
+        width:570px;
+    }
+
+    h2{
+        font-size:35px;
+    }
+    
+    
+    .intro > p{
+        font-size: 30px;
+    }
+
+    #liten{
+        font-size: 23px;
+    }
+
+    h1{
+        font-family: 'Catamaran', sans-serif;
+        color:white;
+        text-align: center;
+        margin-top:150px;
+        font-size: 80px;
+    }
+
+
+}
+
+@media(min-width:1023px){
+    #slutt{
+        width:770px;
+    }
+    
+    main > .lyricbox1{
+        width:770px;
+    }
+    
+    main > .lyricbox2{
+        width:770px;
+    
+    }
+
+    main > .lyricbox3{
+        width:770px;
+    }
+
+}
